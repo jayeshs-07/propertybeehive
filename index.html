@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Beehive</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+
+    <!-- CSS Link start -->
+    <link rel="stylesheet" href="css/style.css" class="rel">
+
+    <!-- CSS Link End -->
+
+    <!-- Fontawsome Link Start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fontawsome Link End  -->
+
+    <!-- BootStrap Link start -->
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css" class="rel">
+    <!-- Boot Strap Link End -->
+
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font family -->
+    <script src="js/custom_jquery.js"></script>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="preloader">
+        <div class="utf-preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Navbar Start  -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="logo">
+                <img src="img/PB-logo.png">
+            </div>
+
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown current">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Buy
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ready to Move</a></li>
+                            <li><a class="dropdown-item" href="#">Owner Properties</a></li>
+                            <li><a class="dropdown-item" href="#">Budget Homes</a></li>
+                            <li><a class="dropdown-item" href="#">Newly Launched</a></li>
+                        </ul>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ready to Move</a></li>
+                            <li><a class="dropdown-item" href="#">Owner Properties</a></li>
+                            <li><a class="dropdown-item" href="#">Budget Homes</a></li>
+                            <li><a class="dropdown-item" href="#">Newly Launched</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sell
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Post Property</a></li>
+                            <li><a class="dropdown-item" href="#">Find an Agent</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Rent/Lease
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Owner Properties</a></li>
+                            <li><a class="dropdown-item" href="#">Verified Properties</a></li>
+                            <li><a class="dropdown-item" href="#">Furnished Homes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PG/Hostel
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="right-side">
+                <div class="header-widget">
+                    <!-- <a href="#utf-signin-dialog-block" class="popup-with-zoom-anim log-in-button sign-in"><i
+                            class="fa-regular fa-user"></i><span>Sign In</span></a> -->
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">                        
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Sign in</h1>                                    
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>                                    
+                                </div>
+                                <div class="modal-body">
+                                    <div class="d-flex flex-row justify-content-center p-3">
+                                        <img src="img/PB-logo.png">
+                                    </div>
+                                    <form class="form-floating d-flex flex-column justify-content-center">
+                                        <input type="email" class="form-control" id="floatingInputValue" placeholder="example@gmail.com " value="">
+                                        <label for="floatingInputValue">Enter Your Email ID or Mobile No.</label>
+                                        <button class="button utf-search-btn-item">Next
+                                        </button>  
+                                        <a href="#" class="nav-link ms-auto mt-2"> Need Help</a> 
+                                    </form>                                                                                          
+                                </div>
+                                <div class="modal-footer d-flex flex-column justify-content-center">
+                                    <button class="btn"><i class="fa-brands fa-google mx-2"></i>Google
+                                    </button> 
+                                    <div class=" d-flex justify-content-center">
+                                       <p>Don't Have an Account ?</p> <a href="#" class="nav-link mx-2 fs-5" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"> Sign Up</a>
+                                    </div>                                
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Sign up</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h4>New Registration</h4>
+                                <form class="form-floating d-flex flex-column justify-content-center">
+                                    <input type="text" class="form-control" id="floatingInputValue" placeholder="Your Name" value="">
+                                    <label for="floatingInputValue">Your Name</label>  
+                                    <select data-placeholder="Type Registration" title="Type Registration"
+                                                class="utf-chosen-select-single-item">
+                                                <option>Type Registration</option>
+                                                <option>Buyer/Owner</option>
+                                                <option>Agent</option>
+                                                <option>Builder</option>                                               
+                                    </select>
+                                    <div class="input-group flex-nowrap mt-2">
+                                        <div class="dropdown">
+                                            <select data-placeholder="Type Registration" title="Type Registration"
+                                                class="utf-chosen-select-single-item">
+                                                <option>IND +91</option>
+                                                <option>USA +1</option>
+                                                <option>PAK +92</option>
+                                                <option>CHN +86</option>                                               
+                                            </select>
+                                            
+                                          </div>
+                                        <input type="text" class="form-control" placeholder="Mobile Number" minlength="0" maxlength="10" aria-label="Username" aria-describedby="addon-wrapping">
+                                    </div>
+                                    <div class="form-check d-flex justify-content-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            <p style="float: left;"> Yes I agree to the</p><a href="#" class="nav-link mx-2" style="float: left;">Terms & Conditions</a>
+                                        </label>
+                                    </div>
+                                </form> 
+                                 <div class="modal-footer d-flex flex-column justify-content-center">
+                                <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button> -->
+                                
+                                <button class="button utf-search-btn-item">Submit
+                                </button> 
+                            </div>   
+                            </div>
+                            
+                            
+                            <div class="d-flex justify-content-center">
+                                <p>Already registered?</p><a href="#" class="nav-link mx-2" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Login Now</a>
+                             </div> 
+                          </div>
+                        </div>
+                      </div>
+                    <button class="btn log-in-button sign-in mt-3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i
+                    class="fa-regular fa-user mx-2"></i><span>Sign in</span></button>
+                    <button class="btn log-in-button submit-button mt-4" ><i
+                    class="fa-solid fa-circle-plus mx-2"></i><span>Create Property</span></button>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Banner Start -->
+    <div class="parallax" data-background="img/bg.jpeg" data-color="#36383e" data-color-opacity="0.72"
+        data-img-width="2500" data-img-height="1600"
+        style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/bg.jpg);">
+        <div class="utf-parallax-content-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="utf-main-search-container-area">
+                            <div class="utf-banner-headline-text-part">
+                                <h2>Best Place To Find <span class="typed-words"></span></h2>
+                                <span>From as low as $10 per day with limited time offer discounts.</span>
+                            </div>
+                            <form class="utf-main-search-form-item">
+                                <div class="utf-search-type-block-area">
+                                    <div class="search-type">
+                                        <label class="active">
+                                            <input class="first-tab" name="tab" checked="checked"
+                                                type="radio">Buy</label>
+                                        <label>
+                                            <input name="tab" type="radio">Rent</label>
+                                        <label>
+                                            <input name="tab" type="radio">Sale</label>
+                                        <div class="utf-search-type-arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="utf-main-search-box-area">
+                                    <div class="row with-forms">
+                                        <!-- <div class="col-md-4 col-sm-12">
+                                            <input type="text" class="ico-01" placeholder="Enter Keywords..."
+                                                value="" />
+                                        </div> -->
+                                        <div class="col-md-4 col-sm-6">
+                                            <select data-placeholder="Select Area" title="Select Area"
+                                                class="utf-chosen-select-single-item">
+                                                <option>Select City</option>
+                                                <option>Afghanistan</option>
+                                                <option>Albania</option>
+                                                <option>Algeria</option>
+                                                <option>Brazil</option>
+                                                <option>Burundi</option>
+                                                <option>Bulgaria</option>
+                                                <option>California</option>
+                                                <option>Germany</option>
+                                                <option>Grenada</option>
+                                                <option>Guatemala</option>
+                                                <option>Iceland</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-4 col-sm-6">
+                                            <select data-placeholder="Select Area" title="Select Area"
+                                                class="utf-chosen-select-single-item">
+                                                <option>Property Type </option>
+                                                <option>Commercial</option>
+                                                <option>Residential</option>
+                                                <option>Industrial</option>
+                                                <option>Agreculure</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2 col-sm-6">
+                                            <button class="button utf-search-btn-item"><i class="fa fa-search"></i>
+                                                Search</button>
+                                        </div>
+                                        <div class="col-md-2 col-sm-6">
+                                            <a class="btn"
+                                                style="padding: 10px; background-color: #f97f25; color: white; width: 100%;"
+                                                data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i
+                                                class="fa-solid fa-plus mx-2"></i>More Search</a>
+                                        </div>
+                                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                            <div class="card" style="border:none">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6">
+                                                        <select data-placeholder="Select City" title="Select City"
+                                                            class="utf-chosen-select-single-item">
+                                                            <option>Select Taluka</option>
+                                                            <option>Ahmedabad</option>
+                                                            <option>Patan</option>
+                                                            <option>Saraswaty</option>
+                                                            <option>Ankleshwar</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-6">
+                                                        <select data-placeholder="Select City" title="Select City"
+                                                            class="utf-chosen-select-single-item">
+                                                            <option>Select Property Category</option>
+                                                            <option>Residential House</option>
+                                                            <option>Commercial Shop</option>
+                                                            <option>Industrial Building</option>
+                                                            <option>Farm House</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-6">
+                                                        <select data-placeholder="Select Area" title="Select Area"
+                                                            class="utf-chosen-select-single-item">
+                                                            <option>Budget</option>
+                                                            <option>₹ 5,00,000</option>
+                                                            <option>₹ 15,00,000</option>
+                                                            <option>₹ 25,00,000</option>
+                                                            <option>₹ 35,00,000</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 col-sm-2 d-lg-flex flex-lg-row">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Dining Room
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mx-2">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Air Condition
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mx-2">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Onsite Parking
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mx-2">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Garden
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mx-2">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Family Room
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mx-2">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Heating System
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mx-2">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Parking
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check mx-2">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Cleaning Service
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                id="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                                Central Heating
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="utf-more-search-options-area">
+                                        <div class="utf-more-search-options-area-container">
+                                            <div class="row with-forms">
+                                                <div class="col-md-4">
+                                                    <select data-placeholder="Property Status"
+                                                        class="utf-chosen-select-single-item">
+                                                        <option>Property Status</option>
+                                                        <option>Any</option>
+                                                        <option>For Rent</option>
+                                                        <option>For Sale</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <select data-placeholder="Property Type"
+                                                        class="utf-chosen-select-single-item">
+                                                        <option>Property Type</option>
+                                                        <option>Residential</option>
+                                                        <option>Commercial</option>
+                                                        <option>Land</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <select data-placeholder="Max Rooms"
+                                                        class="utf-chosen-select-single-item">
+                                                        <option>Max Rooms</option>
+                                                        <option>1 Rooms</option>
+                                                        <option>2 Rooms</option>
+                                                        <option>3 Rooms</option>
+                                                        <option>4 Rooms</option>
+                                                        <option>5 Rooms</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <select data-placeholder="Bed"
+                                                        class="utf-chosen-select-single-item">
+                                                        <option>Bed</option>
+                                                        <option>1 Bed</option>
+                                                        <option>2 Bed</option>
+                                                        <option>3 Bed</option>
+                                                        <option>4 Bed</option>
+                                                        <option>5 Bed</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <select data-placeholder="Bath"
+                                                        class="utf-chosen-select-single-item">
+                                                        <option>Bath</option>
+                                                        <option>1 Bath</option>
+                                                        <option>2 Bath</option>
+                                                        <option>3 Bath</option>
+                                                        <option>4 Bath</option>
+                                                        <option>5 Bath</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <select data-placeholder="Agents"
+                                                        class="utf-chosen-select-single-item">
+                                                        <option>Agents</option>
+                                                        <option>Bob Haris</option>
+                                                        <option>Ross Buttler</option>
+                                                        <option>Andrew Saimons</option>
+                                                        <option>Steve Austin</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="select-input">
+                                                        <input type="text" placeholder="Min Price" data-unit="USD">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="select-input">
+                                                        <input type="text" placeholder="Max Price" data-unit="USD">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="select-input">
+                                                        <input type="text" placeholder="Min Area" data-unit="Sq Ft">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="select-input">
+                                                        <input type="text" placeholder="Max Area" data-unit="Sq Ft">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="checkboxes in-row">
+                                                <div class="title-attribute">Amenities</div>
+                                                <input id="check-1" type="checkbox" name="check">
+                                                <label for="check-1">Emergency Exit</label>
+                                                <input id="check-2" type="checkbox" name="check">
+                                                <label for="check-2">Dining Room</label>
+                                                <input id="check-3" type="checkbox" name="check">
+                                                <label for="check-3">Air Condition</label>
+                                                <input id="check-4" type="checkbox" name="check">
+                                                <label for="check-4">Garden</label>
+                                                <input id="check-5" type="checkbox" name="check">
+                                                <label for="check-5">Onsite Parking</label>
+                                                <input id="check-6" type="checkbox" name="check">
+                                                <label for="check-6">Central Heating</label>
+                                                <input id="check-7" type="checkbox" name="check">
+                                                <label for="check-7">Dishwasher</label>
+                                                <input id="check-8" type="checkbox" name="check">
+                                                <label for="check-8">Family Room</label>
+                                                <input id="check-9" type="checkbox" name="check">
+                                                <label for="check-9">Hardwood Flows</label>
+                                                <input id="check-10" type="checkbox" name="check">
+                                                <label for="check-10">Parking</label>
+                                                <input id="check-11" type="checkbox" name="check">
+                                                <label for="check-11">Cleaning Service</label>
+                                                <input id="check-12" type="checkbox" name="check">
+                                                <label for="check-12">Doorman</label>
+                                                <input id="check-13" type="checkbox" name="check">
+                                                <label for="check-13">Fire Alarm</label>
+                                                <input id="check-14" type="checkbox" name="check">
+                                                <label for="check-14">Heating System</label>
+                                                <input id="check-15" type="checkbox" name="check">
+                                                <label for="check-15">Pets Allowed</label>
+                                                <input id="check-16" type="checkbox" name="check">
+                                                <label for="check-16">Waterfront</label>
+                                                <input id="check-17" type="checkbox" name="check">
+                                                <label for="check-17">Cooling System</label>
+                                                <input id="check-18" type="checkbox" name="check">
+                                                <label for="check-18">Elevator</label>
+                                                <input id="check-19" type="checkbox" name="check">
+                                                <label for="check-19">Fireplace</label>
+                                                <input id="check-20" type="checkbox" name="check">
+                                                <label for="check-20">Home Theater</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Find property cities-->
+
+    <div class="container">
+        <div class="row text-center p-4">
+            <div class="col-md-12">
+                <div class="margin-bottom-30 margin-top-0">
+                    <h3> Find Top Properties in <span style="color: #f97f25; font-weight: 800;">All Cities </span></h3>
+                    <p class="text-center">Handpicked properties by our team</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card card_city">
+                                <img src="img/pexels-foteros-783745.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay text-white ">
+                                    <h5 class="card-title">Vadodara</h5>
+                                </div>
+                                <div class="card-img-overlay text-white d-flex align-items-end">
+                                    <p class="card-text"><small class="mx-2">Explore Now</small> <i
+                                            class="fa-solid fa-circle-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="card  card_city">
+                                <img src="img/city.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay text-white">
+                                    <h5 class="card-title">Surat</h5>
+                                </div>
+                                <div class="card-img-overlay text-white d-flex align-items-end">
+                                    <p class="card-text"><small class="mx-2">Explore Now</small><i
+                                            class="fa-solid fa-circle-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="card  card_city">
+                                <img src="img/city-3.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay text-white">
+                                    <h5 class="card-title">Anand</h5>
+                                </div>
+                                <div class="card-img-overlay text-white d-flex align-items-end">
+                                    <p class="card-text"><small class="mx-2">Explore Now</small> <i
+                                            class="fa-solid fa-circle-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="card  card_city">
+                                <img src="img/city-4.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay text-white">
+                                    <h5 class="card-title">Rajkot</h5>
+                                </div>
+                                <div class="card-img-overlay text-white d-flex align-items-end">
+                                    <p class="card-text"><small class="mx-2">Explore Now</small> <i
+                                            class="fa-solid fa-circle-chevron-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card card_city">
+                                <img src="img/pexels-foteros-783745.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay text-white ">
+                                    <h5 class="card-title">Vadodara</h5>
+                                </div>
+                                <div class="card-img-overlay text-white d-flex align-items-end">
+                                    <p class="card-text"><small class="mx-2">Explore Now</small> <i
+                                            class="fa-solid fa-circle-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="card  card_city">
+                                <img src="img/city.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay text-white">
+                                    <h5 class="card-title">Surat</h5>
+                                </div>
+                                <div class="card-img-overlay text-white d-flex align-items-end">
+                                    <p class="card-text"><small class="mx-2">Explore Now</small><i
+                                            class="fa-solid fa-circle-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="card  card_city">
+                                <img src="img/city-3.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay text-white">
+                                    <h5 class="card-title">Anand</h5>
+                                </div>
+                                <div class="card-img-overlay text-white d-flex align-items-end">
+                                    <p class="card-text"><small class="mx-2">Explore Now</small> <i
+                                            class="fa-solid fa-circle-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="card  card_city">
+                                <img src="img/city-4.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay text-white">
+                                    <h5 class="card-title">Rajkot</h5>
+                                </div>
+                                <div class="card-img-overlay text-white d-flex align-items-end">
+                                    <p class="card-text"><small class="mx-2">Explore Now</small> <i
+                                            class="fa-solid fa-circle-chevron-right"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Find property cities end-->
+
+    <!-- property  collection -->
+    <div class="properties_collection">
+        <div class="container">
+            <div class="row text-center p-4">
+                <div class="col-md-12">
+                    <div class="margin-bottom-30 margin-top-0">
+                        <h3> Properties in <span style="color: #f97f25; font-weight: 800;">Ahmedabad </span></h3>
+                        <p class="text-center">Handpicked properties by our team</p>
+                    </div>
+                </div>
+                <div class="col-auto col-md-12 d-flex">
+                    <div class="card properties_card text-bg-dark">
+                        <img src="img/hands-giving-keys-apartment.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <p class="properties_card_title"><small class="mx-2">Own Property</small><i
+                            class="fa-sharp fa-solid fa-circle-arrow-right"></i></p>
+                        </div>
+                    </div>
+                    <div class="card properties_card text-bg-dark">
+                        <img src="img/residential-building.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <p class="properties_card_title"><small class="mx-2">Projects</small><i
+                            class="fa-sharp fa-solid fa-circle-arrow-right"></i></p>
+                        </div>
+                    </div>
+                    <div class="card properties_card text-bg-dark">
+                        <img src="img/view-living-room.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <p class="properties_card_title"><small class="mx-2">New Launch</small><i
+                                    class="fa-sharp fa-solid fa-circle-arrow-right"></i></p>
+                        </div>
+                    </div>
+                    <div class="card properties_card text-bg-dark">
+                        <img src="img/property-value-growth.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <p class="properties_card_title"><small class="mx-2">Budget Homes</small><i
+                                    class="fa-sharp fa-solid fa-circle-arrow-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- property collection -->
+
+    <!-- Popular Properties -->
+    <div class="container">
+        <div class="row p-4">
+            <div class="col-auto col-md-12 text-center ">
+                <div class="margin-bottom-30 margin-top-0">
+                    <h3> Trending in<span style="color: #f97f25; font-weight: 800;"> Ahmedabad </span></h3>
+                    <p class="text-center">Find your dream home from our Rent added properties</p>
+                </div>
+            </div>
+            <div class="col-auto col-md-12 col-lg-12 full_properties_rent">
+                <div class="card properties_rent_card" style="width: 30%;">
+                    <img src="img/property-areas.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-overlay ">
+                        <span class="badge text-bg-warning">New</span>
+                        <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                        <label class="btn rounded-circle" style="float: right;" for="btn-check-outlined"><i
+                                class="fa-solid fa-bookmark"></i></label>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="properties_rent_title">Vivekanand Arise</h5>
+                        <p class="properties_rent_text"><i class="fa-solid fa-location-dot mx-2"></i>Satellite,
+                            Ahmedabad</p>
+                        <ul class="d-flex flex-row" style="padding: 0;">
+                            <li class="list-group-item"><i class="fa-solid fa-bed mx-2"></i>Bed : 03</li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath mx-2"></i>Bath : 2</li>
+                            <li class="list-group-item"><i class="fa-solid fa-square mx-2"></i>Sqft :3000</li>
+                            <li class="list-group-item"><i class="fa-solid fa-building mx-2"></i>Sqft :3000</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body card_footer  d-flex justify-content-between">
+                        <p><i class="fa-solid fa-indian-rupee-sign mx-2" style="color: #f97f25;"></i>8 lac</p>
+                        <a href="#" class="btn btn_now">Contact Now <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+                <div class="card properties_rent_card" style="width: 30%;">
+                    <img src="img/property-areas.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-overlay">
+                        <span class="badge text-bg-warning">New</span>
+                        <input type="checkbox" class="btn-check" id="btn-check-outlined2" autocomplete="off">
+                        <label class="btn rounded-circle" style="float: right;" for="btn-check-outlined2"><i
+                                class="fa-solid fa-bookmark"></i></label>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="properties_rent_title">Vivekanand Arise</h5>
+                        <p class="properties_rent_text"><i class="fa-solid fa-location-dot mx-2"></i>Satellite,
+                            Ahmedabad</p>
+                        <ul class="d-flex flex-row" style="padding: 0;">
+                            <li class="list-group-item"><i class="fa-solid fa-bed mx-2"></i>Bed : 03</li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath mx-2"></i>Bath : 2</li>
+                            <li class="list-group-item"><i class="fa-solid fa-square mx-2"></i>Sqft :3000</li>
+                            <li class="list-group-item"><i class="fa-solid fa-building mx-2"></i>Sqft :3000</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body card_footer  d-flex justify-content-between">
+                        <p><i class="fa-solid fa-indian-rupee-sign mx-2" style="color: #f97f25;"></i>8 lac</p>
+                        <a href="#" class="btn btn_now">Contact Now <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+                <div class="card properties_rent_card" style="width: 30%;">
+                    <img src="img/property-areas.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-overlay">
+
+                        <input type="checkbox" class="btn-check" id="btn-check-outlined3" autocomplete="off">
+                        <label class="btn rounded-circle" style="float: right;" for="btn-check-outlined3"><i
+                                class="fa-solid fa-bookmark"></i></label>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="properties_rent_title">Vivekanand Arise</h5>
+                        <p class="properties_rent_text"><i class="fa-solid fa-location-dot mx-2"></i>Satellite,
+                            Ahmedabad</p>
+                        <ul class="d-flex flex-row" style="padding: 0;">
+                            <li class="list-group-item"><i class="fa-solid fa-bed mx-2"></i>Bed : 03</li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath mx-2"></i>Bath : 2</li>
+                            <li class="list-group-item"><i class="fa-solid fa-square mx-2"></i>Sqft :3000</li>
+                            <li class="list-group-item"><i class="fa-solid fa-building mx-2"></i>Sqft :3000</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body card_footer  d-flex justify-content-between">
+                        <p><i class="fa-solid fa-indian-rupee-sign mx-2" style="color: #f97f25;"></i>8 lac</p>
+                        <a href="#" class="btn btn_now">Contact Now <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+                <div class="card properties_rent_card" style="width: 30%;">
+                    <img src="img/property-areas.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-overlay">
+                        <span class="badge text-bg-warning">New</span>
+                        <input type="checkbox" class="btn-check" id="btn-check-outlined4" autocomplete="off">
+                        <label class="btn rounded-circle" style="float: right;" for="btn-check-outlined4"><i
+                                class="fa-solid fa-bookmark"></i></label>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="properties_rent_title">Vivekanand Arise</h5>
+                        <p class="properties_rent_text"><i class="fa-solid fa-location-dot mx-2"></i>Satellite,
+                            Ahmedabad</p>
+                        <ul class="d-flex flex-row" style="padding: 0;">
+                            <li class="list-group-item"><i class="fa-solid fa-bed mx-2"></i>Bed : 03</li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath mx-2"></i>Bath : 2</li>
+                            <li class="list-group-item"><i class="fa-solid fa-square mx-2"></i>Sqft :3000</li>
+                            <li class="list-group-item"><i class="fa-solid fa-building mx-2"></i>Sqft :3000</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body card_footer d-flex justify-content-between">
+                        <p><i class="fa-solid fa-indian-rupee-sign mx-2" style="color: #f97f25;"></i>8 lac</p>
+                        <a href="#" class="btn btn_now">Contact Now <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+                <div class="card properties_rent_card" style="width: 30%;">
+                    <img src="img/property-areas.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-overlay">
+
+                        <input type="checkbox" class="btn-check" id="btn-check-outlined5" autocomplete="off">
+                        <label class="btn rounded-circle" style="float: right;" for="btn-check-outlined5"><i
+                                class="fa-solid fa-bookmark"></i></label>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="properties_rent_title">Vivekanand Arise</h5>
+                        <p class="properties_rent_text"><i class="fa-solid fa-location-dot mx-2"></i>Satellite,
+                            Ahmedabad</p>
+                        <ul class="d-flex flex-row" style="padding: 0;">
+                            <li class="list-group-item"><i class="fa-solid fa-bed mx-2"></i>Bed : 03</li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath mx-2"></i>Bath : 2</li>
+                            <li class="list-group-item"><i class="fa-solid fa-square mx-2"></i>Sqft :3000</li>
+                            <li class="list-group-item"><i class="fa-solid fa-building mx-2"></i>Sqft :3000</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body card_footer d-flex justify-content-between">
+                        <p><i class="fa-solid fa-indian-rupee-sign mx-2" style="color: #f97f25;"></i>8 lac</p>
+                        <a href="#" class="btn btn_now">Contact Now <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+                <div class="card properties_rent_card" style="width: 30%;">
+                    <img src="img/property-areas.jpg" class="card-img-top" alt="...">
+                    <div class="card-img-overlay">
+
+                        <input type="checkbox" class="btn-check" id="btn-check-outlined6" autocomplete="off">
+                        <label class="btn rounded-circle" style="float: right;" for="btn-check-outlined6"><i
+                                class="fa-solid fa-bookmark"></i></label>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="properties_rent_title">Vivekanand Arise</h5>
+                        <p class="properties_rent_text"><i class="fa-solid fa-location-dot mx-2"></i>Satellite,
+                            Ahmedabad</p>
+                        <ul class="d-flex flex-row" style="padding: 0;">
+                            <li class="list-group-item"><i class="fa-solid fa-bed mx-2"></i>Bed : 03</li>
+                            <li class="list-group-item"><i class="fa-solid fa-bath mx-2"></i>Bath : 2</li>
+                            <li class="list-group-item"><i class="fa-solid fa-square mx-2"></i>Sqft :3000</li>
+                            <li class="list-group-item"><i class="fa-solid fa-building mx-2"></i>Sqft :3000</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body card_footer d-flex justify-content-between">
+                        <p><i class="fa-solid fa-indian-rupee-sign mx-2" style="color: #f97f25;"></i>8 lac</p>
+                        <a href="#" class="btn btn_now">Contact Now <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Popular Properties  end-->
+
+
+    <!-- Property Section -->
+    <!-- <div class="Property-Section" style="margin-top: 100px; text-align: center;">
+        <div class="container">
+            <div class="card" style="align-items: center; border: none; ">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card mb-3" style="max-width: 900px;">
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="img/OIP.jpg" class="img-fluid rounded-start" style="height:350px;"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body" style="text-align: left;">
+                                            <h2 style="font-weight: 600;">Super City</h2>
+                                            <h3>300000/-</h3>
+                                            <p>A-20,Super City ,Bhadaj, Ahemdabad.</p>
+                                            <div class="row mt-2">
+                                                <div class="col-4"><i class="fa-solid fa-bed"
+                                                        style="background-color: #f97f25;border-radius: 50%; color: #fff;padding: 15px;box-shadow: 0px 0px 10px 10px #d4ea98;"></i><br>
+                                                    <p class="mt-2">Bedroom</p>
+                                                </div>
+                                                <div class="col-4"><i class="fa-solid fa-sink"
+                                                        style="background-color: #f97f25;border-radius: 50%; color: #fff;padding: 15px; box-shadow: 0px 0px 10px 10px #d4ea98;"></i><br><p class="
+                                                        mt-2">Bathroom</p>
+                                                </div>
+                                                <div class="col-4"><i class="fa-brands fa-microsoft"
+                                                        style="background-color: #f97f25;border-radius: 50%; color: #fff;padding: 15px; box-shadow: 0px 0px 10px 10px #d4ea98;"></i><br><p class="
+                                                        mt-2">SQft</p>
+                                                </div>
+                                            </div>
+                                            <div class="button-view mt-5">
+                                                <button type="button" class="btn btn-outline-success">View More</button>
+
+                                                <img src="img/wapp.png" width="50" height="50" class="call" style="float: right;margin-right: 20px;border-radius: 100% #000;cursor: pointer;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-5" style="align-items: center; border: none;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 24rem;">
+                                        <img src="img/OIP.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="text-align: left;">
+                                            <h2 style="font-weight: 600;">Super City</h2>
+                                            <h3>300000/-</h3>
+                                            <p>A-20,Super City ,Bhadaj, Ahemdabad.</p>
+                                            <div class="row mt-2">
+                                                <div class="col-4"><i class="fa-solid fa-bed"
+                                                        style="background-color: #f97f25;border-radius: 50%; color: #fff;padding: 15px;box-shadow: 0px 0px 10px 10px #d4ea98;"></i><br>
+                                                    <p class="mt-2">Bedroom</p>
+                                                </div>
+                                                <div class="col-4"><i class="fa-solid fa-sink"
+                                                        style="background-color: #f97f25;border-radius: 50%; color: #fff;padding: 15px; box-shadow: 0px 0px 10px 10px #d4ea98;"></i><br><p class="
+                                                        mt-2">Bathroom</p>
+                                                </div>
+                                                <div class="col-4"><i class="fa-brands fa-microsoft"
+                                                        style="background-color: #f97f25;border-radius: 50%; color: #fff;padding: 15px; box-shadow: 0px 0px 10px 10px #d4ea98;"></i><br><p class="
+                                                        mt-2">SQft</p>
+                                                </div>
+                                            </div>
+                                            <div class="button-view mt-5">
+                                                <button type="button" class="btn btn-outline-success">View More</button>
+                                                
+                                                <img src="img/wapp.png" width="50" height="50" class="call" style="float: right;margin-right: 20px;border-radius: 100% #000;cursor: pointer;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 24rem;">
+                                        <img src="img/OIP.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="text-align: left;">
+                                            <h2 style="font-weight: 600;">Super City</h2>
+                                            <h3>300000/-</h3>
+                                            <p>A-20,Super City ,Bhadaj, Ahemdabad.</p>
+                                            <div class="row mt-2">
+                                                <div class="col-4"><i class="fa-solid fa-bed"
+                                                        style="background-color: #f97f25;border-radius: 50%; color: #fff;padding: 15px;box-shadow: 0px 0px 10px 10px #d4ea98;"></i><br>
+                                                    <p class="mt-2">Bedroom</p>
+                                                </div>
+                                                <div class="col-4"><i class="fa-solid fa-sink"
+                                                        style="background-color: #f97f25;border-radius: 50%; color: #fff;padding: 15px; box-shadow: 0px 0px 10px 10px #d4ea98;"></i><br><p class="
+                                                        mt-2">Bathroom</p>
+                                                </div>
+                                                <div class="col-4"><i class="fa-brands fa-microsoft"
+                                                        style="background-color: #f97f25;border-radius: 50%; color: #fff;padding: 15px; box-shadow: 0px 0px 10px 10px #d4ea98;"></i><br><p class="
+                                                        mt-2">SQft</p>
+                                                </div>
+                                            </div>
+                                            <div class="button-view mt-5">
+                                                <button type="button" class="btn btn-outline-success">View More</button>
+                                                
+                                                <img src="img/wapp.png" width="50" height="50" class="call" style="float: right;margin-right: 20px;border-radius: 100% #000;cursor: pointer;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card" style="width: 24rem;">
+                                        <img src="img/OIP.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="text-align: left;">
+                                            <h2 style="font-weight: 600;">Super City</h2>
+                                            <h3>300000/-</h3>
+                                            <p>A-20,Super City ,Bhadaj, Ahemdabad.</p>
+                                            <div class="row mt-2">
+                                                <div class="col-4"><i class="fa-solid fa-bed"
+                                                        style="background-color: #f97f25;border-radius: 50%; color: #fff;padding: 15px;box-shadow: 0px 0px 10px 10px #d4ea98;"></i><br>
+                                                    <p class="mt-2">Bedroom</p>
+                                                </div>
+                                                <div class="col-4"><i class="fa-solid fa-sink"
+                                                        style="background-color: #f97f25;border-radius: 50%; color: #fff;padding: 15px; box-shadow: 0px 0px 10px 10px #d4ea98;"></i><br><p class="
+                                                        mt-2">Bathroom</p>
+                                                </div>
+                                                <div class="col-4"><i class="fa-brands fa-microsoft"
+                                                        style="background-color: #f97f25;border-radius: 50%; color: #fff;padding: 15px; box-shadow: 0px 0px 10px 10px #d4ea98;"></i><br><p class="
+                                                        mt-2">SQft</p>
+                                                </div>
+                                            </div>
+                                            <div class="button-view mt-5">
+                                                <button type="button" class="btn btn-outline-success">View More</button>
+                                                
+                                                <img src="img/wapp.png" width="50" height="50" class="call" style="float: right;margin-right: 20px;border-radius: 100% #000;cursor: pointer;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <div class="margin-bottom-30 margin-top-0">
+                    <h3> Property Options <span style="color: #f97f25; font-weight: 800;">in Ahmedabad</span></h3>
+
+                </div>
+            </div>
+
+            <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card properties_card text-bg-dark">
+                            <img src="img/hands-giving-keys-apartment.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="card properties_card text-bg-dark">
+                            <img src="img/hands-giving-keys-apartment.jpg" class="card-img" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+    </div> -->
+
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <a href="index.html"><img class="footer-logo" src="img/PB-logo.png" alt=""></a>
+                    <p>Lorem Ipsum is simply dummy text of printing and type setting industry. Lorem Ipsum been industry
+                        standard dummy text ever since, when unknown printer took a galley type scrambled.</p>
+                    <div class="social-media-link">
+                        <h4>FOLLOW</h4>
+                        <ul class="social_media_icon" style="padding: 0;">
+                            <a href="#">
+                                <li class="social_media_item" style="list-style: none; float: left; margin-left: 8px;">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="social_media_item" style="list-style: none; float: left; margin-left: 8px;">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="social_media_item" style="list-style: none; float: left; margin-left: 8px;">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li class="social_media_item" style="list-style: none; float: left; margin-left: 8px;">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6">
+                    <h4>Useful Links</h4>
+                    <ul class="utf-footer-links-item">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Properties</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6">
+                    <h4>My Account</h4>
+                    <ul class="utf-footer-links-item">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">Add Property</a></li>
+                        <li><a href="#">My Listing</a></li>
+                        <li><a href="#">Favorites</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6">
+                    <h4>Resources</h4>
+                    <ul class="utf-footer-links-item">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">How It Work</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Term & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6">
+                    <h4>Pages</h4>
+                    <ul class="utf-footer-links-item">
+                        <li><a href="#">Our Partners</a></li>
+                        <li><a href="#">How It Work</a></li>
+                        <li><a href="#">FAQ Page</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Term & Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyrights">Copyright © 2022 All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="backtotop"><a href="#"></a></div>
+    </div>
+
+
+    <!-- Sign In Popup -->
+
+    <!-- Sign In Popup / End -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/chosen.min.js"></script>
+    <script src="scripts/magnific-popup.min.js"></script>
+    <script src="scripts/owl.carousel.min.js"></script>
+    <script src="scripts/rangeSlider.js"></script>
+    <script src="scripts/sticky-kit.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/masonry.min.js"></script>
+    <script src="scripts/mmenu.min.js"></script>
+    <script src="scripts/tooltips.min.js"></script>
+    <script src="scripts/typed.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // var typed = new Typed('.typed-words', {
+        //     strings: ["Dream Home.", " Apartments.", " Residential.", " Commercial."],
+        //     typeSpeed: 80,
+        //     backSpeed: 80,
+        //     backDelay: 4000,
+        //     startDelay: 1000,
+        //     loop: true,
+        //     showCursor: true
+        // });
+
+
+    </script>
+</body>
+
+</html>
