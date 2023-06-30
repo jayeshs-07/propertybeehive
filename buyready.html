@@ -68,7 +68,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="logo">
-                <img src="img/PB-logo.png">
+               <a href="index.html"><img src="img/PB-logo.png"></a> 
             </div>
 
             
@@ -80,7 +80,7 @@
                             Buy
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Ready to Move</a></li>
+                            <li><a class="dropdown-item" href="buyready.html">Ready to Move</a></li>
                             <li><a class="dropdown-item" href="#">Owner Properties</a></li>
                             <li><a class="dropdown-item" href="#">Budget Homes</a></li>
                             <li><a class="dropdown-item" href="#">Newly Launched</a></li>
@@ -230,35 +230,146 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid top_filter">
         <div class="row">
-            <div class="col-4 col-md-3">
-              <div  class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
-                <a class="p-1 rounded" href="#simple-list-item-1">Item 1</a>
-                <a class="p-1 rounded" href="#simple-list-item-2">Item 2</a>
-                <a class="p-1 rounded" href="#simple-list-item-3">Item 3</a>
-                <a class="p-1 rounded" href="#simple-list-item-4">Item 4</a>
-                <a class="p-1 rounded" href="#simple-list-item-5">Item 5</a>
+            <div class="col-8 col-md-3">
+              <form class="d-flex" role="search">
+                <div class="input-group p-3">
+                  <button class="btn fliter_dropdown dropdown-toggle bg-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">Buy</button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Buy</a></li>
+                    <li><a class="dropdown-item" href="#">Sell</a></li>
+                    <li><a class="dropdown-item" href="#">Rent</a></li>
+                  </ul>
+                  <input type="text" class="form-control m-auto"  placeholder="Search Location" aria-label="Text input with dropdown button">
+                </div>
+              </form>
+              <!-- <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Top Localities
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> 
+                      <h6>Top Localities</h6>
+                      <div class="">
+                        <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                        <label class="btn btn_check" for="btn-check"><i class="fa-regular fa-square-plus mx-1"></i>Gota</label>
+                        <input type="checkbox" class="btn-check" id="btn-check1" autocomplete="off">
+                        <label class="btn btn_check" for="btn-check1"><i class="fa-regular fa-square-plus mx-1"></i>Bopal</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                     Budget
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="col-md-12 d-flex">
+                          <select data-placeholder="Budget min" title="Budget min"
+                                class="utf-chosen-select-single-item">
+                                <option>Min</option>
+                                <option>₹ 5 lac</option>
+                                <option>₹ 10 lac</option>
+                                <option>₹ 15 lac</option>
+                                <option>₹ 20 lac</option> 
+                                <option>₹ 25 lac</option> 
+                                <option>₹ 30 lac</option> 
+                                <option>₹ 35 lac</option> 
+
+                          </select>
+                          <span style="display: flex; align-items: center;">To</span>
+                          <select data-placeholder="Budget max" title="Budget max"
+                                class="utf-chosen-select-single-item">
+                                <option>Max</option>
+                                <option>₹ 5 lac</option>
+                                <option>₹ 10 lac</option>
+                                <option>₹ 15 lac</option>
+                                <option>₹ 20 lac</option> 
+                                <option>₹ 25 lac</option> 
+                                <option>₹ 30 lac</option> 
+                                <option>₹ 35 lac</option>  
+                                <option>₹ 40 lac</option>   
+                                <option>₹ 45 lac</option>                                            
+                          </select>                   
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Property Type
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> 
+                      <h6>Residential</h6>
+                      <input type="checkbox" class="btn-check" id="btn-check2" autocomplete="off">
+                      <label class="btn btn_check" for="btn-check2"><i class="fa-regular fa-square-plus mx-1"></i>flat</label>
+                      <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off">
+                      <label class="btn btn_check" for="btn-check3"><i class="fa-regular fa-square-plus mx-1"></i>House/Vila</label>                     
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>      
+            <div class="col-4 col-md-2 d-flex">
+              <div class="input-group">
+                <div class="dropdown mt-4">
+                  <button class="btn bg-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Budget
+                  </button>
+                  <ul class="dropdown-menu p-4">
+                    <li class=" d-flex">
+                      <select data-placeholder="Min" title="min"
+                      class="utf-chosen-select-single-item">
+                      <option>Min</option>
+                      <option>₹ 5 lac</option>
+                      <option>₹ 10 lac</option>
+                      <option>₹ 15 lac</option>                                               
+                      </select>
+                      <span style="display: flex; align-items: center;">To</span>
+                      <select data-placeholder="Max" title="max"
+                      class="utf-chosen-select-single-item">
+                      <option>Max</option>
+                      <option>₹ 5 lac</option>
+                      <option>₹ 10 lac</option>
+                      <option>₹ 15 lac</option>                                               
+                      </select>
+                    </li>
+                    
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="col-8 col-md-9">
-              <div data-bs-spy="scroll" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-                <h4 id="simple-list-item-1">Item 1asdas</h4>
-                <p>...</p>
-                <h4 id="simple-list-item-2">Item 2</h4>
-                <p>...</p>
-                <h4 id="simple-list-item-3">Item 3</h4>
-                <p>...</p>
-                <h4 id="simple-list-item-4">Item 4</h4>
-                <p>...</p>
-                <h4 id="simple-list-item-5">Item 5</h4>
-                <p>...</p>
+              <div class="input-group mx-4">
+                <div class="dropdown mt-4">
+                  <button class="btn bg-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Property Type
+                  </button>
+                  <ul class="dropdown-menu p-4">
+                    <li>
+                      <h6>Residential</h6>
+                      <div class="form-check form-check-inline">
+                        
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">flat</label>
+                      </div>
+                    </li>       
+                  </ul>
+                </div>
               </div>
-            </div>
-          </div>
+            </div>     
+        </div>
     </div>
 
-
+  
 
 
 
@@ -283,7 +394,21 @@
     <script src="scripts/mmenu.min.js"></script>
     <script src="scripts/tooltips.min.js"></script>
     <script src="scripts/typed.js"></script>
-
+    <script>
+      $('#multi').mdbRange({
+          value: {
+          min: -250,
+          max: 250
+          },
+          single: {
+          active: true,
+          multi: {
+          active: true,
+          rangeLength: 2
+          },
+        }
+      });
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="

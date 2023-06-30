@@ -1335,11 +1335,21 @@ input.second-slider-value {
 
 
 /* buyready html css */
-.search_filter{
-    background-color: #f97f25;
-    padding: 20px;
+.top_filter{
+    background-color: #f97f25 !important;
 }
-
+.fliter_dropdown{
+    border-radius: 5px 0px 0px 5px !important;
+}
+.fliter_dropdown:focus{
+    background-color: #ffffff !important;
+}
+.fliter_dropdown .show{
+    background-color: #ffffff !important;
+}
+.top_filter .form-control{
+    border-radius: 0px 5px 5px 0px !important;
+}
 /* buyready html css */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
