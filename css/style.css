@@ -1318,7 +1318,6 @@ input.second-slider-value {
     cursor: pointer;
 }
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    background-color: #f97f25 !important;
     color: #ffffff;
     border: none;
 }
@@ -1349,6 +1348,14 @@ input.second-slider-value {
 }
 .top_filter .form-control{
     border-radius: 0px 5px 5px 0px !important;
+}
+.filter_dropdown.show{
+    width: 300px;
+    display: flex;
+}
+.fileter_dropdown h5{
+    font-weight: 800;
+    font-size: 16px;
 }
 /* buyready html css */
 
