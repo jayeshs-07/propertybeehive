@@ -46,6 +46,9 @@
     />
     <!-- font family -->
     <script src="js/custom_jquery.js"></script>
+    <script>
+      
+    </script>
   </head>
   <body>
     <!-- Preloader Start -->
@@ -338,10 +341,10 @@
             >
               <i class="fa-regular fa-user mx-2"></i><span>Sign in</span>
             </button>
-            <button class="btn log-in-button submit-button mt-4">
+            <a class="btn log-in-button submit-button mt-4" href="postproperty.html">
               <i class="fa-solid fa-circle-plus mx-2"></i
               ><span>Create Property</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -767,6 +770,23 @@
         </div>
       </div>
     </div>
+    <button type="button" class="btn mb-4 " id="liveToastBtn2" style="background-color: #f97f25; position: fixed; bottom: 0;margin-right: 30px; right: 0; z-index: 100;">
+      <i class="fa-solid fa-robot"></i>
+  </button>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="img/favicon.png" class="rounded me-2" alt="...">
+        <strong class="me-auto">Property Beehive</strong>
+        <small>Hi! Searching for Property? Let's Chat</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+
+      </div>
+    </div>
+  </div>
     <div id="footer">
       <div class="container">
           <div class="row">
@@ -862,6 +882,8 @@
     <script src="scripts/tooltips.min.js"></script>
     <script src="scripts/typed.js"></script>
     <script>
+
+      
       const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')
       dataSpyList.forEach(dataSpyEl => {
         bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
@@ -879,6 +901,15 @@
           },
         },
       });
+      const toastTrigger = document.getElementById('liveToastBtn2')
+        const toastLiveExample = document.getElementById('liveToast2')
+
+        if (toastTrigger) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        toastTrigger.addEventListener('click', () => {
+            toastBootstrap.show()
+        })
+        }
     </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"

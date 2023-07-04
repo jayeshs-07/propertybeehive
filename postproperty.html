@@ -348,113 +348,320 @@
     </nav>
 
     <!-- Post Property From-->
-  
-    <div class="container-fluid">
-        <div class="row">
-            <div class="post_property_form p-4">
-                <div class="col-md-12">
-                    <h4>Sell or Rent your Property</h4>
-                    <p>You are posting this property for free</p>
-                </div>
-                <div class="col-md-4 d-flex align-items-center">
-                  <label for="" class="fw-semibold">Account Type</label> 
-                    <select data-placeholder="Select Area" title="Select Area"
-                        class="utf-chosen-select-single-item  w-50 mx-2">
-                        <option>Owner</option>
-                        <option>Agent</option>
-                        <option>Bulider</option>
-                    </select>
-                </div>
-                <div class="col-md-3 my-2">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Enter Name">
-                        <label for="floatingInput">Name</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>      
 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 bg_post_property p-3 d-flex flex-column align-items-center">
+          <div class="card post_property_form p-4">
+            <div class="col-md-12 ">
+              <h4 class="heading">Sell or Rent your Property</h4>
+              <p>You are posting this property for free</p>
+            </div>
+            <div class="col-md-12 d-flex align-items-center">
+              <label for="" class="fw-semibold">Account Type</label>
+              <div class="d-flex mx-2">
+                <div class="form-check form-check-inline d-flex">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1">Agent</label>
+                </div>
+                <div class="form-check form-check-inline d-flex">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1">Builder</label>
+                </div>
+                <div class="form-check form-check-inline d-flex">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1">Owner</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 my-2">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Enter Name"
+                />
+                <label for="floatingInput">Enter Name</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="input-group mb-3">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  IND +91
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">USA +1</a></li>
+                  <li><a class="dropdown-item" href="#">AUS +61</a></li>
+                  <li><a class="dropdown-item" href="#">AFG +93</a></li>
+                  <li><a class="dropdown-item" href="#">GTM +502</a></li>
+                </ul>
+                <input
+                  type="text"
+                  class="form-control m-auto"
+                  placeholder="Phone Number"
+                  aria-label="Text input with dropdown button"
+                />
+              </div>
+            </div>
+            <div class="col-md-8 my-2">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="Enter Email"
+                />
+                <label for="floatingInput">Enter Email</label>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <h4>Property Details</h4>
+            </div>
+            <div class="col-md-12 my-2 d-flex align-items-center">
+              <label for="" class="fw-semibold">Property</label>
+              <div class="d-flex mx-2">
+                <div class="form-check form-check-inline d-flex">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1">Sale</label>
+                </div>
+                <div class="form-check form-check-inline d-flex">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >Rent</label
+                  >
+                </div>
+                <div class="form-check form-check-inline d-flex">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="inlineRadioOptions"
+                    id="inlineRadio1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="inlineRadio1"
+                    >PG</label
+                  >
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-md-8">
+              <select
+              data-placeholder="Property Type"
+              title="Property Type"
+              class="utf-chosen-select-single-item">
+              <option>Property Type</option>
+              <option>Flat/ Apartment</option>
+              <option>Residential House</option>
+              <option>Villa</option>
+              <option>Builder Floor Apartment</option>
+              <option>Residential Land/ Plot</option>
+              <option>Studio Apartment</option>
+              <option>Office in IT Park</option>
+            </select>
+            </div>
+            <div class="col-md-12 my-2">
+              <label for="" class="fw-semibold">Property Location</label>
+              <div class="col-md-8 my-2">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Property City"/>
+                  <label for="floatingInput">Property City</label>
+                </div>
+              </div> 
+              <div class="col-md-8">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Locality"/>
+                  <label for="floatingInput">Locality</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  I agree to Magicbricks T&C, Privacy Policy, & Cookie Policy
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  I want to receive responses on
+                </label>
+              </div>
+            </div>
+            <div class="col-md-12 mt-3 d-flex justify-content-center">
+              <a class="btn btn-sm"
+                style="padding: 10px; background-color: #f97f25; color: white; border:none"
+                data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                Create Property
+              </a>
+            </div> 
+          </div>
+        </div>
+        <!-- <div class="col-md-6">
+          <img src="img/property_sell.png" alt="" width="50%">
+        </div> -->
+      </div>
+    </div>
+    
+    <button type="button" class="btn mb-4 " id="liveToastBtn" style="background-color: #f97f25; position: fixed; bottom: 0;margin-right: 30px; right: 0; z-index: 100;">
+      <i class="fa-solid fa-robot"></i>
+  </button>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">Property Beehive</strong>
+        <small>Hi! Searching for Property? Let's Chat</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        
+      </div>
+    </div>
+  </div>
     <!-- Post Property From end-->
     <div id="footer">
       <div class="container">
-          <div class="row">
-              <div class="col-md-4 col-sm-12 col-xs-12">
-                  <a href="index.html"><img class="footer-logo" src="img/PB-logo.png" alt=""></a>
-                  <p>Lorem Ipsum is simply dummy text of printing and type setting industry. Lorem Ipsum been industry
-                      standard dummy text ever since, when unknown printer took a galley type scrambled.</p>
-                  <div class="social-media-link">
-                      <h4>FOLLOW</h4>
-                      <ul class="social_media_icon" style="padding: 0;">
-                          <a href="#">
-                              <li class="social_media_item" style="list-style: none; float: left; margin-left: 8px;">
-                                  <i class="fa-brands fa-square-facebook"></i>
-                              </li>
-                          </a>
-                          <a href="#">
-                              <li class="social_media_item" style="list-style: none; float: left; margin-left: 8px;">
-                                  <i class="fa-brands fa-instagram"></i>
-                              </li>
-                          </a>
-                          <a href="#">
-                              <li class="social_media_item" style="list-style: none; float: left; margin-left: 8px;">
-                                  <i class="fa-brands fa-twitter"></i>
-                              </li>
-                          </a>
-                          <a href="#">
-                              <li class="social_media_item" style="list-style: none; float: left; margin-left: 8px;">
-                                  <i class="fa-brands fa-linkedin"></i>
-                              </li>
-                          </a>
-                      </ul>
-                  </div>
-              </div>
-              <div class="col-md-2 col-sm-3 col-xs-6">
-                  <h4>Useful Links</h4>
-                  <ul class="utf-footer-links-item">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Properties</a></li>
-                      <li><a href="#">Contact</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-2 col-sm-3 col-xs-6">
-                  <h4>My Account</h4>
-                  <ul class="utf-footer-links-item">
-                      <li><a href="#">Dashboard</a></li>
-                      <li><a href="#">My Profile</a></li>
-                      <li><a href="#">Add Property</a></li>
-                      <li><a href="#">My Listing</a></li>
-                      <li><a href="#">Favorites</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-2 col-sm-3 col-xs-6">
-                  <h4>Resources</h4>
-                  <ul class="utf-footer-links-item">
-                      <li><a href="#">My Account</a></li>
-                      <li><a href="#">Support</a></li>
-                      <li><a href="#">How It Work</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
-                      <li><a href="#">Term & Condition</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-2 col-sm-3 col-xs-6">
-                  <h4>Pages</h4>
-                  <ul class="utf-footer-links-item">
-                      <li><a href="#">Our Partners</a></li>
-                      <li><a href="#">How It Work</a></li>
-                      <li><a href="#">FAQ Page</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
-                      <li><a href="#">Term & Condition</a></li>
-                  </ul>
-              </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <a href="index.html"
+              ><img class="footer-logo" src="img/PB-logo.png" alt=""
+            /></a>
+            <p>
+              Lorem Ipsum is simply dummy text of printing and type setting
+              industry. Lorem Ipsum been industry standard dummy text ever
+              since, when unknown printer took a galley type scrambled.
+            </p>
+            <div class="social-media-link">
+              <h4>FOLLOW</h4>
+              <ul class="social_media_icon" style="padding: 0">
+                <a href="#">
+                  <li
+                    class="social_media_item"
+                    style="list-style: none; float: left; margin-left: 8px"
+                  >
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </li>
+                </a>
+                <a href="#">
+                  <li
+                    class="social_media_item"
+                    style="list-style: none; float: left; margin-left: 8px"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </li>
+                </a>
+                <a href="#">
+                  <li
+                    class="social_media_item"
+                    style="list-style: none; float: left; margin-left: 8px"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </li>
+                </a>
+                <a href="#">
+                  <li
+                    class="social_media_item"
+                    style="list-style: none; float: left; margin-left: 8px"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </li>
+                </a>
+              </ul>
+            </div>
           </div>
-          <div class="row">
-              <div class="col-md-12">
-                  <div class="copyrights">Copyright © 2022 All Rights Reserved.</div>
-              </div>
+          <div class="col-md-2 col-sm-3 col-xs-6">
+            <h4>Useful Links</h4>
+            <ul class="utf-footer-links-item">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Properties</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </div>
+          <div class="col-md-2 col-sm-3 col-xs-6">
+            <h4>My Account</h4>
+            <ul class="utf-footer-links-item">
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">My Profile</a></li>
+              <li><a href="#">Add Property</a></li>
+              <li><a href="#">My Listing</a></li>
+              <li><a href="#">Favorites</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-6">
+            <h4>Resources</h4>
+            <ul class="utf-footer-links-item">
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">How It Work</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Term & Condition</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-3 col-xs-6">
+            <h4>Pages</h4>
+            <ul class="utf-footer-links-item">
+              <li><a href="#">Our Partners</a></li>
+              <li><a href="#">How It Work</a></li>
+              <li><a href="#">FAQ Page</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Term & Condition</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyrights">Copyright © 2022 All Rights Reserved.</div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -471,10 +678,10 @@
     <script src="scripts/tooltips.min.js"></script>
     <script src="scripts/typed.js"></script>
     <script>
-      const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')
-      dataSpyList.forEach(dataSpyEl => {
-        bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
-      })
+      const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]');
+      dataSpyList.forEach((dataSpyEl) => {
+        bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh();
+      });
       $("#multi").mdbRange({
         value: {
           min: -250,
