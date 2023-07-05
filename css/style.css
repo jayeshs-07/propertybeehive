@@ -4,6 +4,10 @@
 .nav-link{
     color: #f97f25 !important;
 }
+a{
+    color: black !important;
+    text-decoration: none !important;
+}
 .navbar-expand-lg .navbar-nav .nav-link {   
     padding-left: 25px !important;
     color: #f97f25;
@@ -204,7 +208,7 @@
     font-size: 20px;
     transform: translateY(-50%);
     transition: 0.3s;
-    color: #f97f25;
+    color: #f97f25 !important;
     border: 2px solid #f97f25;
     padding: 11px;
     margin: 0 5px;
@@ -1301,14 +1305,14 @@ input.second-slider-value {
     color: #ffffff;
     font-size: 20px;
 }
-.properties_rent_card .btn_now{
+/* .properties_rent_card .btn_now{
     transition:bottom .3s ease-out;
     position: absolute;
     transform: translate(0px, 67px);
     overflow: hidden;
     opacity:0;
     visibility:hidden;
-}
+} */
 .properties_rent_card:hover .btn_now{
     top:0;
     position: relative;
@@ -1432,6 +1436,10 @@ background-color: #f97f25 !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center;
+    }
+    .card_link{
+        color: black !important;
+        text-decoration: none !important;
     }
     .properties_rent_card{
         width: 100% !important;
@@ -4903,7 +4911,7 @@ ul.utf-footer-links-item {
     -o-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    color: #707070;
+    color: #707070 !important;
     line-height: 21px;
     text-decoration: none;
 }

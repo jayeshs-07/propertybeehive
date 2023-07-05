@@ -770,23 +770,25 @@
         </div>
       </div>
     </div>
+
     <button type="button" class="btn mb-4 " id="liveToastBtn2" style="background-color: #f97f25; position: fixed; bottom: 0;margin-right: 30px; right: 0; z-index: 100;">
-      <i class="fa-solid fa-robot"></i>
-  </button>
+        <i class="fa-solid fa-robot"></i>
+    </button>
 
-  <div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <img src="img/favicon.png" class="rounded me-2" alt="...">
-        <strong class="me-auto">Property Beehive</strong>
-        <small>Hi! Searching for Property? Let's Chat</small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-      <div class="toast-body">
-
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <img src="img/favicon.png" class="rounded me-2" alt="...">
+          <strong class="me-auto">Property Beehive</strong>
+          <small>Hi! Searching for Property? Let's Chat</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          
+        </div>
       </div>
     </div>
-  </div>
+
     <div id="footer">
       <div class="container">
           <div class="row">
@@ -867,7 +869,7 @@
               </div>
           </div>
       </div>
-  </div>
+    </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
@@ -888,28 +890,16 @@
       dataSpyList.forEach(dataSpyEl => {
         bootstrap.ScrollSpy.getInstance(dataSpyEl).refresh()
       })
-      $("#multi").mdbRange({
-        value: {
-          min: -250,
-          max: 250,
-        },
-        single: {
-          active: true,
-          multi: {
-            active: true,
-            rangeLength: 2,
-          },
-        },
-      });
+      
       const toastTrigger = document.getElementById('liveToastBtn2')
-        const toastLiveExample = document.getElementById('liveToast2')
+      const toastLiveExample = document.getElementById('liveToast2')
 
-        if (toastTrigger) {
-        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-        toastTrigger.addEventListener('click', () => {
-            toastBootstrap.show()
-        })
-        }
+      if (toastTrigger) {
+      const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+      toastTrigger.addEventListener('click', () => {
+          toastBootstrap.show()
+      })
+      }
     </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
